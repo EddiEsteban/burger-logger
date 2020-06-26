@@ -1,0 +1,24 @@
+{
+  "name": "burger-logger",
+  "version": "1.0.0",
+  "description": "Declare burgers and eat them. Demonstration of Node, Express, Handlebars, and MySQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddiEsteban/burger-logger.git"
+  },
+  "author": "Eddi Esteban",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EddiEsteban/burger-logger/issues"
+  },
+  "homepage": "https://github.com/EddiEsteban/burger-logger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
