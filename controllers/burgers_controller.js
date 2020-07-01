@@ -8,7 +8,6 @@ function router(app){
     })
     
     app.get('/devour/:id', async (req, res)=>{
-        console.log('params', req.params.id)
         let id = await model.devourBurger(req.params.id)
         res.redirect('/')
     })

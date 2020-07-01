@@ -1,0 +1,16 @@
+BODY {
+    background-color: #dcba98;
+}
+
+.card {
+    background-color: #987654;
+}
+
+.btn {
+    background-color: #654321;
+    border-style:none;
+}
+
+h1 {
+    font-family: Cooper Black;
+}
