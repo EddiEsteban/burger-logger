@@ -6,7 +6,7 @@ function selectAll(){
 }
 
 function insertOne(item){
-    return db.query('INSERT INTO burgers VALUES(0,?,FALSE)', item)
+    return db.query('INSERT INTO burgers SET id=0, burger_name=?, devoured=FALSE, createdAt=CURRENT_TIMESTAMP', item)
 }
 
 function updateOne(item){
