@@ -22,7 +22,7 @@ Submit a burger of any name you want, and it will be added to your platter. You 
 
 <a id='toc-install'></a>
 ## Installation
-No installation required. Follow the Heroku link to begin usage.
+No installation required. Follow the Heroku link [here](https://polite-backbacon-18650.herokuapp.com/) to begin usage.
 
 <a id='toc-usage'></a>
 ## Usage
