@@ -8,15 +8,15 @@ function router(app){
     })
     
     app.get('/devour/:id', async (req, res)=>{
-        let id = await model.devourBurger(req.params.devour)
+        console.log('params', req.params.id)
+        let id = await model.devourBurger(req.params.id)
         res.redirect('/')
     })
 
     app.post('/', async (req, res)=>{
         console.log(`[POST] with data: `, req.body)
-        await model.addBurger(req.body.burger)
+        await model.addBurger(req.body['custom-burger'])
 
-        console.log( `platter: `, burger.getAvailable() )
         res.redirect('/')
         
     })
@@ -24,28 +24,6 @@ function router(app){
 }
 
 
-// app.get(`/`, async(req, res)=>{
-//     console.log('get')
-//     result = await orm.selectAll()
-//     console.log(result)
-//     return res.render('index', {result})
-// })
-
-// app.get(`/:id/`, async(req, res)=>{
-//     let id = req.params.id
-
-// })
-
-// app.post(`/`, async (req, res)=>{
-//     console.log('post')
-//     burgerReq = req.body
-//     console.log(wishBody)
-//     // await orm.insertOne(burgerReq.burger)
-//     // result = await orm.selectAll()
-
-//     // return res.render('index', {result})
-// })
-
-
-
 module.exports = router
+
+// used in ../server.js

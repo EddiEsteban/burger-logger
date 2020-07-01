@@ -12,7 +12,7 @@ async function getDevoured(){
 }
 
 function addBurger(name){
-    return orm.addOne(name)
+    return orm.insertOne(name)
 }
 
 function devourBurger(id){
@@ -25,3 +25,5 @@ module.exports = {
     addBurger,
     devourBurger
 }
+
+// used in ../controllers/burgers_controller.js

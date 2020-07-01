@@ -2,17 +2,17 @@
 <div class='col-md-6'>
     {{#each platter}}
     <div class="card" data-id='{{id}}'>
-        <div class="card-body">
-            {{burger}} <button type="button" class="btn btn-info">Consume Burger</button>
-        </div>
+        <div class="card-body"><form action='/devour/{{id}}'> 
+            {{burger_name}} <button type="submit" class="btn btn-info">Consume Burger</button>
+        </form></div>
     </div>
     {{/each}}
 </div>
 <div class='col-md-6' data-id='{{id}}'>
-    {{#each eaten}}
-    <div class="card">
+    {{#each devoured}}
+    <div class="card" data-id='{{id}}'>
         <div class="card-body">
-            {{burger}}
+            {{burger_name}}
         </div>
     </div>
     {{/each}}
